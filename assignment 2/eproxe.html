@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Settings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef8f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            width: 60%;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .profile-section {
+            flex: 1;
+            padding: 20px;
+        }
+        .menu-section {
+            flex: 1;
+            padding: 20px;
+            background: #f0f0f0;
+            border-radius: 10px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            margin: 15px 0;
+        }
+        .input-group input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #004d3d;
+            color: white;
+            font-size: 16px;
+        }
+        .input-group input::placeholder {
+            color: white;
+        }
+        .save-btn {
+            background: #ccc;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .menu {
+            margin-top: 20px;
+        }
+        .menu-item {
+            background: #d3d3d3;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+        .menu-item img {
+            width: 20px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-section">
+            <div class="logo">
+                <img src="img\WhatsApp Image 2024-11-20 at 14.09.34_a3268124.jpg" alt="Logo">
+                <h2>EPROXE</h2>
+            </div>
+            <div class="input-group">
+                <input type="text" placeholder="Full Name">
+            </div>
+            <div class="input-group">
+                <input type="email" placeholder="E-Mail">
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Password">
+            </div>
+            <div class="input-group">
+                <input type="text" placeholder="Phone Number">
+            </div>
+            <button class="save-btn">Save Changes</button>
+        </div>
+        <div class="menu-section">
+            <div class="logo">
+                <img src="img\WhatsApp Image 2024-11-20 at 14.09.34_a3268124.jpg" alt="Logo">
+                <h2>EPROXE</h2>
+            </div>
+            <div class="menu">
+                <div class="menu-item">My Profile</div>
+                <div class="menu-item">Settings</div>
+                <div class="menu-item">Notifications</div>
+                <div class="menu-item">Log Out</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Options</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaf7e3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            animation: fadeIn 1s ease-in-out;
+        }
+        h2 {
+            display: flex;
+            align-items: center;
+        }
+        .qr-code {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        .option {
+            display: flex;
+            justify-content: space-between;
+            background: #c8e6c9;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: transform 0.3s, background 0.3s;
+        }
+        .option:hover {
+            transform: scale(1.05);
+            background: #a5d6a7;
+        }
+        .radio {
+            width: 20px;
+            height: 20px;
+        }
+        .logos {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+            animation: slideUp 1s ease-in-out;
+        }
+        .logos img {
+            width: 60px;
+            height: auto;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2><img src="img\png-transparent-qr-code-barcode-scanners-scanner-two-dimensional-code-icon-miscellaneous-angle-text-thumbnail.png" alt="QR Code" class="qr-code"> Show QR CODE</h2>
+        <p>Scan With Any UPI app</p>
+        
+        <div class="option">
+            <span><strong>UPI ID</strong><br>PhonePe, GPay, Paytm & more</span>
+            <input type="radio" class="radio" name="payment">
+        </div>
+        <div class="option">
+            <span><strong>Card</strong><br>Visa, MasterCard, Rupay & more</span>
+            <input type="radio" class="radio" name="payment">
+        </div>
+        <div class="option">
+            <span><strong>Net Banking</strong><br>Choose your bank to complete payment</span>
+            <input type="radio" class="radio" name="payment">
+        </div>
+        
+        <div class="logos">
+            <img src="img\gpay.webp" alt="GPay">
+            <img src="img\images.png" alt="Paytm">
+            <img src="img\images (1).png" alt="PhonePe">
+        </div>
+    </div>
+</body>
+</html>
